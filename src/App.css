@@ -1,0 +1,49 @@
+.App {
+}
+
+.Table {
+  border-spacing: 0;
+}
+
+.Table .Row {
+}
+
+.Table .Row:first-child .Cell {
+  border-top: 1px solid #c0c0c0;
+}
+
+.Table .Cell:first-child {
+  border-left: 1px solid #c0c0c0;
+}
+
+.Table .Cell {
+  border-right: 1px solid #c0c0c0;
+  border-bottom: 1px solid #c0c0c0;
+}
+
+.Table .HeaderRow {
+
+}
+
+.Table .HeaderCell:first-child {
+  border-left: 1px solid #c0c0c0;
+}
+
+.Table .HeaderCell {
+  background-color: #f0f0f0;
+  border-right: 1px solid #c0c0c0;
+  border-top: 1px solid #c0c0c0;
+}
+
+.Table .HeaderColumnCell .Sort {
+
+}
+
+.Table .HeaderColumnCell .Sort.disabled {
+  cursor: default;
+}
+
+.Table .Filter:before {
+  content:'';
+  margin-left: 5px;
+}

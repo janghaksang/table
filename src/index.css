@@ -1,0 +1,12 @@
+button {
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  color: inherit;
+  background-color: inherit;
+  outline: none;
+  border: 0;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: bold;
+}
