@@ -79,7 +79,7 @@ export default class Table extends React.Component {
     return (
       <th
         key={columnIndex+1}
-        className={css('HeaderCell HeaderColumnCell',className)}
+        className={css('Cell','HeaderCell','HeaderColumnCell',className)}
         style={style}
         >
         <div>
@@ -97,7 +97,7 @@ export default class Table extends React.Component {
     style = style||{};
     return (
       <th
-        className={css('HeaderCell HeaderRowCell',className)}
+        className={css('Cell','HeaderCell','HeaderRowCell',className)}
         style={style}
         >
         {name}
@@ -110,7 +110,7 @@ export default class Table extends React.Component {
     return (
       <td
         key={columnId}
-        className={'Cell'}
+        className={css('Cell')}
         >
         {cellData}
       </td>
@@ -119,7 +119,7 @@ export default class Table extends React.Component {
 
   renderHeaderBlock = (props)=>{
     if(props.renderHeaderBlock) return props.renderHeaderBlock(props);
-    return (<th className={css('HeaderCell')}/>);
+    return (<th className={css('Cell','HeaderCell')}/>);
   }
 
   renderHeaderRow = (props)=>{
@@ -128,7 +128,7 @@ export default class Table extends React.Component {
     let {className,style} = rowSchema[0]||{};
     return (
       <tr
-        className={css('HeaderRow',className)}
+        className={css('Row','HeaderRow',className)}
         style={style}
         >
         {rowHeaderVisible&&this.renderHeaderBlock(props)}

@@ -37,18 +37,16 @@
   border-bottom: 1px solid #c0c0c0;
 }
 
+.Table tbody .Row:first-child .Cell {
+  border-top: 0;
+}
+
 .Table .HeaderRow {
 
 }
 
-.Table .HeaderCell:first-child {
-  border-left: 1px solid #c0c0c0;
-}
-
 .Table .HeaderCell {
   background-color: #f0f0f0;
-  border-right: 1px solid #c0c0c0;
-  border-top: 1px solid #c0c0c0;
 }
 
 .Table .HeaderColumnCell .Sort {

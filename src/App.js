@@ -51,7 +51,7 @@ class App extends Component {
   }
 
   renderFilterValue(filter,index) {
-    let value = filter.value||(()=>{
+    let value = filter.value!=null?filter.value:(()=>{
       switch(filter.type) {
         case 'string': return '';
         case 'number': return '';
